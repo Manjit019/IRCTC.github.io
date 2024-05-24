@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNR Enquiry-IRCTC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/index-DJxjntYJ.css">
+</head>
+
+<body>
+    <header class="w-full h-1/6 flex justify-between px-5  border shadow-sm z-30 bg-white sticky top-0">
+        <div class="left" class="w-1/3">
+            <img src="/assets/IRCTC-logo-Transparent-PNG-DJKYts_e.png" alt="Irctc" class="max-w-28 max-h-28">
+
+        </div>
+        </div>
+        <div class="right flex gap-4 mobile:gap-1 items-center">
+            <img src="/assets/digital%20India-BSatzoHh.png" alt="digital india" class="max-w-8 max-h-8 align-middle">
+            <img src="/assets/g20summit-B4g8HrzF.png" alt="G20 summit" class="max-w-8 max-h-8">
+            <img src="/assets/make%20in%20india-CS3ndIf8.png" alt="make in india" class="max-w-8 max-h-8">
+            <img src="/assets/Govenment%20of%20india-BqKcubr_.png" alt="Govenment of India" class="max-w-8 max-h-8">
+        </div>
+    </header>
+    <div class="size-full  mobile:mt-[-10rem] md:mt-[-10rem] bg-indigo-100 rounded-b-full absolute -z-10 animate-pulse"> </div>
+    <div class="size-full  mobile:mt-[-12rem] md:mt-[-12rem] bg-indigo-400 rounded-b-full  absolute -z-10 animate-pulse "> </div>
+        <button type="button" class="login btn w-fit fixed right-2 mt-[-14px] z-30">Log in</button>
+    <section class="w-full h-full px-14 mobile:px-6">
+
+        <div class="md:max-w-max relative bg-white border-2 rounded-lg p-5 mt-9 my-6 m-auto">
+            <div class="heading p-6">
+                <h2 class="text-center font-bold text-2xl capitalize">Passenger Current Status Enquiry</h2>
+                <p class="text-center text-sm capitalize pt-3">please provide PNR no. & press submit button</p>
+            </div>
+            <div class="input flex flex-col gap-4 justify-center place-items-center pt-11 p-5 bg-slate-100 rounded-md">
+                <!-- <label for="input" class="text-sm  text-start">Enter PNR </label> -->
+                <input type="text" name="PnrNO" id="input" placeholder="PNR Number " required
+                    class="w-10/12 h-8 p-4 border-2 rounded-md  shadow-slate-800 hover:border-blue-300 cursor-pointer placeholder:text-center">
+                <input type="submit" value="Submit" class="btn">
+            </div>
+        </div>
+    </section>
+
+    <section class="container-result w-full p-6">
+        <div class="pnrno bg-indigo-100 max-w-fit px-4 py-1 rounded-full outline-2 outline-offset-2 outline outline-indigo-400 font-semibold text-center mx-auto">PNR Number : <span class="text-indigo-800">430393388</span></div>
+        <div class="w-full h-1 bg-indigo-100 mt-[-1rem] rounded-full"></div>
+
+        <div class="bg-white p-4 my-8 w-full overflow-x-auto border-4 border-indigo-100 rounded-lg ">
+            <table class="w-full table-auto border-separate border-spacing-2 text-[14px] text-center">
+                <thead>
+                    <tr class="text-indigo-700 text-xs sm:text-[12px] text-nowrap">
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Train  Number</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Train Name</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Bording Date</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">From</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">To</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Reserved Upto</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Boarding Point</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-slate-400 rounded-sm p-2">12639</td>
+                        <td class="border border-slate-400 rounded-sm">BRINDAWAN EXP</td>
+                        <td class="border border-slate-400 rounded-sm">03-03-2024</td>
+                        <td class="border border-slate-400 rounded-sm">MAS</td>
+                        <td class="border border-slate-400 rounded-sm">SBC</td>
+                        <td class="border border-slate-400 rounded-sm">SBC</td>
+                        <td class="border border-slate-400 rounded-sm">MAS</td>
+                        <td class="border border-slate-400 rounded-sm">2S</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- //2nd -->
+        <div class="bg-white p-4 my-5 w-full overflow-x-auto border-4 border-indigo-200 rounded-lg">
+            <table class="w-full table-auto border-separate border-spacing-2 text-[14px] text-center">
+                <thead>
+                    <tr class="text-indigo-700 text-xs sm:text-[12px] text-nowrap">
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Sr. No.</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Booking Status (Coach NO,Birth no.,Quota)</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Current Status (Coach No.,Birth No.)</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Coach Position</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-slate-400 rounded-sm p-2">Passenger 1</td>
+                        <td class="border border-slate-400 rounded-sm">CNF/D960WS/GN</td>
+                        <td class="border border-slate-400 rounded-sm">CAN</td>
+                        <td class="border border-slate-400 rounded-sm"></td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- //3rd  -->
+        <div class="bg-white p-4 my-5 w-full overflow-x-auto border-4 border-indigo-300 rounded-lg">
+            <table class="w-full table-auto border-separate border-spacing-2 text-[14px] text-center">
+                <thead>
+                    <tr class="text-indigo-700 text-xs sm:text-[12px] text-nowrap">
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Total Fare</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Charting Status</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Remark (if any)</th>
+                        <th class="bg-slate-300 rounded-full px-4 py-1">Train Status</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-slate-400 rounded-sm p-2">150</td>
+                        <td class="border border-slate-400 rounded-sm">Chart Prepared</td>
+                        <td class="border border-slate-400 rounded-sm"></td>
+                        <td class="border border-slate-400 rounded-sm">Train has Departed (Booking not allowed)</td>
+                       
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="w-full py-3 border-t-2 ">
+    <p class="text-center text-slate-600 sm:text-xs md:text-sm mobile:text-xs">Designed and Developed with 🩵 by <span class="text-indigo-500">Manjit.</span></p>
+   </footer>
+</body>
+
+</html>
