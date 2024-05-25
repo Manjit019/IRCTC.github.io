@@ -10,7 +10,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
         rel="stylesheet">
-  <link rel="stylesheet" crossorigin href="/assets/index-NLY714E6.css">
+        <script
+        src="https://kit.fontawesome.com/e2966aec31.js"
+        crossorigin="anonymous"
+      ></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C9k2QHgR.css">
 </head>
 
 <body>
@@ -28,7 +32,8 @@
     </header>
     <div class="w-full h-72 bg-indigo-100 rounded-b-full absolute -z-10 animate-pulse"> </div>
     <div class="w-full h-60  bg-indigo-400 rounded-b-full  absolute -z-10"> </div>
-        <button type="button" class="login btn w-fit fixed right-2 mt-[-14px] z-30">Log in</button>
+    <a href="https://www.irctc.co.in/nget/train-search" target="_blank">
+        <button type="button" class="login btn w-fit fixed right-2 mt-[-14px] z-30">Log in <i class="fa-solid fa-right-to-bracket"></i></button></a>
     <section class="w-full h-full px-14 mobile:px-6">
 
         <div class="md:max-w-max relative bg-white border-2 rounded-lg p-5 mt-9 my-6 m-auto">
@@ -39,15 +44,18 @@
             <div class="input flex flex-col gap-4 justify-center place-items-center pt-11 p-5 bg-slate-100 rounded-md">
                 <!-- <label for="input" class="text-sm  text-start">Enter PNR </label> -->
                 <input type="text" name="PnrNO" id="input" placeholder="PNR Number " required
-                    class="w-10/12 h-8 p-4 border-2 rounded-md  shadow-slate-800 hover:border-blue-300 cursor-pointer placeholder:text-center">
-                <input type="submit" value="Submit" class="btn">
+                    class="user-input w-10/12 h-8 p-4 border-2 rounded-md  shadow-slate-800 hover:border-blue-300 cursor-pointer placeholder:text-center">
+                <input type="submit" value="Submit" class="btn submit-btn">
             </div>
         </div>
     </section>
 
+    <!-- Error -->
+    <div class="error hidden w-max bg-red-100 text-red-600 max-w-fit px-4 py-1 rounded-md outline-2 outline-offset-1 outline outline-red-400 font-semibold text-center mx-auto fixed top-20 left-1/2 -translate-x-1/2  z-40"> Error</div>
+
     <section class="container-result w-full p-6">
-        <div class="pnrno bg-indigo-100 max-w-fit px-4 py-1 rounded-full outline-2 outline-offset-2 outline outline-indigo-400 font-semibold text-center mx-auto">PNR Number : <span class="text-indigo-800">430393388</span></div>
-        <div class="w-full h-1 bg-indigo-100 mt-[-1rem] rounded-full"></div>
+        <div class="pnrno hidden bg-indigo-100 max-w-fit px-4 py-1 rounded-full outline-2 outline-offset-2 outline outline-indigo-400 font-semibold text-center mx-auto">PNR Number : <span class="text-indigo-800">430393388</span></div>
+        <!-- <div class="w-full h-1 bg-indigo-100 mt-[-1rem] rounded-full"></div>
 
         <div class="bg-white p-4 my-8 w-full overflow-x-auto border-2 border-indigo-100 rounded-lg ">
             <table class="w-full table-auto border-separate border-spacing-2 text-[14px] text-center">
@@ -76,9 +84,9 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
         <!-- //2nd -->
-        <div class="bg-white p-4 my-5 w-full overflow-x-auto border-2 border-indigo-200 rounded-lg">
+        <!-- <div class="bg-white p-4 my-5 w-full overflow-x-auto border-2 border-indigo-200 rounded-lg">
             <table class="w-full table-auto border-separate border-spacing-2 text-[14px] text-center">
                 <thead>
                     <tr class="text-indigo-700 text-xs sm:text-[12px] text-nowrap">
@@ -99,10 +107,10 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
 
         <!-- //3rd  -->
-        <div class="bg-white p-4 my-5 w-full overflow-x-auto border-2 border-indigo-300 rounded-lg">
+        <!-- <div class="bg-white p-4 my-5 w-full overflow-x-auto border-2 border-indigo-300 rounded-lg">
             <table class="w-full table-auto border-separate border-spacing-2 text-[14px] text-center">
                 <thead>
                     <tr class="text-indigo-700 text-xs sm:text-[12px] text-nowrap">
@@ -123,12 +131,14 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </div> -->
     </section>
 
     <footer class="w-full py-3 border-t-2 ">
     <p class="text-center text-slate-600 sm:text-xs md:text-sm mobile:text-xs">Designed and Developed with 🩵 by <span class="text-indigo-500">Manjit.</span></p>
    </footer>
+
+   <script src="script.js"></script>
 </body>
 
 </html>
