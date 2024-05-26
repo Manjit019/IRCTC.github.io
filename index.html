@@ -2,17 +2,42 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-051Q2HX5LD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-051Q2HX5LD');
+    </script>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PNR Enquiry-IRCTC</title>
+    <meta name="description" content="Check Indian Railways PNR Status online. Enter your PNR number to get current status of your reservation.">
+    <meta name="keywords" content="Indian Railways, PNR Status, Train Ticket, Reservation, Check Status">
+    <meta name="author" content="Manjit Kumar">
+    <meta property="og:title" content="Indian Railways PNR Status Checker">
+    <meta property="og:description" content="Check Indian Railways PNR Status online. Enter your PNR number to get current status of your reservation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pnrstatus.netlify.app/">
+    <meta property="og:image" content="https://logos-world.net/wp-content/uploads/2020/11/IRCTC-Logo.png">
+    <meta property="og:image:alt" content="Indian Railways Logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Indian Railways PNR Status Checker">
+    <meta name="twitter:description" content="Check Indian Railways PNR Status online. Enter your PNR number to get current status of your reservation.">
+    <meta name="twitter:image" content="https://logos-world.net/wp-content/uploads/2020/11/IRCTC-Logo.png">
+    <title>PNR Enquiry-IRCTC</title>
+    <link rel="shortcut icon" href="/assets/IRCTC-Logo-DoWr0AJK.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/e2966aec31.js" crossorigin="anonymous"></script>
-  <script type="module" crossorigin src="/assets/index-Bey31Nm2.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B_F2GRXN.css">
+  <script type="module" crossorigin src="/assets/index-BXOVzowP.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BGnPXXeS.css">
 </head>
 
 <body>
@@ -45,12 +70,12 @@
             <div class="input flex flex-col gap-4 justify-center place-items-center pt-11 p-5 bg-slate-100 rounded-md">
                 <!-- <label for="input" class="text-sm  text-start">Enter PNR </label> -->
                 <input type="text" name="PnrNO" id="input" maxlength="10" placeholder="PNR Number " required
-                    class="user-input w-10/12 h-8 p-6 border-2 rounded-lg  shadow-slate-800 hover:border-blue-300 cursor-pointer placeholder:text-center text-center" >
+                    class="user-input w-10/12 h-8 p-6 border-2 rounded-lg  shadow-slate-800 hover:border-blue-300 cursor-pointer placeholder:text-center text-center">
                 <div class="w-full flex justify-evenly">
 
-                    <input type="button" value="Clear"  class=" btn btn-clear bg-slate-500 hover:bg-slate-600">
+                    <input type="button" value="Clear" class=" btn btn-clear bg-slate-500 hover:bg-slate-600">
                     <input type="submit" value="Submit" class="btn submit-btn">
-                  
+
                 </div>
 
             </div>
@@ -58,11 +83,13 @@
     </section>
 
     <!-- Error -->
-    <div
-        class="error w-full mobile:text-sm  bg-red-100 text-red-600 max-w-fit px-4 py-1 rounded-md outline-2 outline-offset-1 outline outline-red-400 font-semibold text-center mx-auto fixed top-20 left-1/2 -translate-x-1/2  z-40  transition-all delay-500">
-        <p class="px-2 py-1">Error!kdffgsdkfsdkfsdjfksd fsdfsdfsdakfjsadfsd afsdfsdfksdjf sad </p></div>
-
-        <!-- Output contaier  -->
+    <div class="error hidden w-full px-5 fixed top-20 z-40 transition-all delay-500 animate-bounce">
+        <div
+            class="mobile:text-sm  bg-red-100 text-red-600 max-w-fit px-4 py-1 rounded-md outline-2 outline-offset-1 outline outline-red-400 font-semibold text-center m-auto">
+            <p class="p-2">Error! please provide a valid Pnr number with total ten digits.. </p>
+        </div>
+    </div>
+    <!-- Output contaier  -->
     <section class="container-result w-full p-6 hidden">
         <div
             class="pnrno  bg-indigo-100 max-w-fit px-4 py-1 rounded-full outline-2 outline-offset-2 outline outline-indigo-400 font-semibold text-center mx-auto">
@@ -148,9 +175,12 @@
         </div>
     </section>
 
-    <footer class="w-full mt-6 bg-white  md:static py-3 border-t-2 ">
-        <p class="text-center text-slate-600 sm:text-xs md:text-sm mobile:text-xs ">Designed and Developed with 🩵 by
-            <span class="text-indigo-500">Manjit.</span></p>
+    <footer class="w-full mt-6 px-4 bg-white md:flex md:justify-between md:static py-3 border-t-[1px] ">
+        <p class="text-center text text-slate-500 mobile:text-xs md:text-sm mb-1">Copyright © 2024 - All rights reserved
+        </p>
+        <p class="text-center text-slate-600  md:text-sm mobile:text-[12px] ">Designed and Developed with 🩵 by
+            <span class="text-indigo-500">Manjit.</span>
+        </p>
     </footer>
 
 </body>
